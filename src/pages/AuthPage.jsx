@@ -1,6 +1,7 @@
 import React from 'react';
 import Auth from '../Components/auth/Auth';
 import { useAuth } from '../contexts/AuthContextProvider';
+
 import HomePage from './HomePage';
 
 const AuthPage = () => {

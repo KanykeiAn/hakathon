@@ -1,17 +1,15 @@
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import AuthPage from '../pages/AuthPage';
-import CakePage from '../pages/CakePage';
 import HomePage from '../pages/HomePage';
-import MacaronPage from '../pages/MacaronPage';
-import IceCreamPage from '../pages/IceCreamPage';
-import DrinksPage from '../pages/DrinksPage';
 import AdminPage from '../pages/AdminPage';
 import CartPage from '../pages/CartPage';
 import ProductDetailsPage from '../pages/ProductdetailsPage';
 import EditProductPage from '../pages/EditProductPage';
 import { useAuth } from '../contexts/AuthContextProvider';
 import { ADMIN } from '../helpers/consts';
+import AboutUsPage from '../pages/AboutUsPage';
+import ProductsPage from '../pages/ProductsPage';
 
 
 const MainRoutes = () => {
@@ -23,44 +21,34 @@ const MainRoutes = () => {
             id: 1,
         },
         {
-            link: '/about',
+            link: '/',
             element: <HomePage />,
             id: 2,
         },
         {
-            link: '/mac',
-            element: <MacaronPage />,
+            link: '/about',
+            element: <AboutUsPage />,
             id: 3,
         },
         {
-            link: '/cake',
-            element: <CakePage />,
+            link: '/products',
+            element: <ProductsPage />,
             id: 4,
-        },
-        {
-            link: '/ice',
-            element: <IceCreamPage />,
-            id: 5,
-        },
-        {
-            link: '/drinks',
-            element: <DrinksPage />,
-            id: 6,
         },
         {
             link: '/admin',
             element: <AdminPage />,
-            id: 7,
+            id: 5,
         },
         {
             link: '/cart',
             element: <CartPage />,
-            id: 8,
+            id: 6,
         },
         {
             link: '/products/:id',
             element: <ProductDetailsPage />,
-            id: 9,
+            id: 7,
           },
     ]
 

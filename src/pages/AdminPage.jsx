@@ -5,7 +5,7 @@ import AddProduct from '../Components/product/AddProduct';
 const AdminPage = () => {
   return (
     <div>
-      AdminPage
+      <h2 className='admin' >Admin Panel</h2>
       <AddProduct />
     </div>
   );

@@ -16,14 +16,11 @@ import { Badge } from '@mui/material';
 import { getCountProductsInCart } from '../../helpers/functions';
 import { useCart } from '../../contexts/CartContextProvider';
 import { ADMIN } from '../../helpers/consts';
+import Search from './Search';
 
 const pages = [
   { name: 'О нас', link: '/about', id: 1 },
-  { name: 'Макаронс', link: '/mac', id: 2 },
-  { name: 'Торты', link: '/cake', id: 3 },
-  { name: 'Мороженое', link: '/ice', id: 4 },
-  { name: 'Напитки', link: '/drinks', id: 5 },
-  { name: 'Админ', link: '/admin', id: 6 },
+  { name: 'Продукты', link: '/products', id: 2 },
 ];
 
 
@@ -53,8 +50,8 @@ const Navbar = () => {
 
   return (
     <AppBar position="static" elevation={3}>
-      <Container maxWidth="xl" sx={{ background: 'grey' }}>
-        <Toolbar disableGutters>
+      <Container maxWidth="xl" sx={{ background: 'grey' }} >
+        <Toolbar disableGutters className="appbar">
           <Typography
             variant="h6"
             noWrap
@@ -63,7 +60,7 @@ const Navbar = () => {
           >
             <img
               id="logo"
-              src="https://sedelice.ru/img/logo.svg"
+              src="https://cdn1.vectorstock.com/i/1000x1000/74/60/delicious-bakery-cakes-and-cookies-vector-26557460.jpg"
               alt=""
             />
           </Typography>
@@ -103,7 +100,7 @@ const Navbar = () => {
                     <Link to={page.link}>
                       <Typography
                         sx={{
-                          ml: 'auto',
+                          ml: '0',
                           my: 1,
                           color: 'black',
                           display: 'block',
@@ -115,20 +112,9 @@ const Navbar = () => {
                   </MenuItem>
                 ))}
               </Box>
+              
             </Menu>
           </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-          >
-            <img
-              id="logo"
-              src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/logo_3.png"
-              alt=""
-            />
-          </Typography>
           <Box
             sx={{
               justifyContent: 'center',
@@ -167,6 +153,8 @@ const Navbar = () => {
               </Link>
             )}
           </Box>
+
+            <Search />
 
           <Box sx={{ flexGrow: 0 }}>
             {email ? (

@@ -17,6 +17,7 @@ import { getCountProductsInCart } from '../../helpers/functions';
 import { useCart } from '../../contexts/CartContextProvider';
 import { ADMIN } from '../../helpers/consts';
 import Search from './Search';
+import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
 const pages = [
   { name: 'О нас', link: '/about', id: 1 },

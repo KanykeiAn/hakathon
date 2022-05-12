@@ -9,6 +9,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Button } from '@mui/material';
 import { useCart } from '../../contexts/CartContextProvider';
+import { Link } from 'react-router-dom';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -95,8 +96,10 @@ export default function Cart() {
           ))}
         </TableBody>
       </Table>
-
-      <Button onClick={cartCleaner}> BUY NOW FOR {cart?.totalPrice} $</Button>
+      
+      <Link to="/paycard">
+        <Button onClick={cartCleaner}>BUY NOW FOR {cart.totalPrice}$</Button>
+      </Link>
     </TableContainer>
   );
 }

@@ -17,11 +17,12 @@ import { getCountProductsInCart } from '../../helpers/functions';
 import { useCart } from '../../contexts/CartContextProvider';
 import { ADMIN } from '../../helpers/consts';
 import Search from './Search';
-import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
+import Product from './Product';
 
 const pages = [
   { name: 'О нас', link: '/about', id: 1 },
-  { name: 'Продукты', link: '/products', id: 2 },
+  { name: 'Продукты', link: '/products', id: 2 }
+
 ];
 
 
@@ -51,7 +52,8 @@ const Navbar = () => {
 
   return (
     <AppBar position="static" elevation={3}>
-      <Container maxWidth="xl" sx={{ background: 'grey' }} >
+      <Container maxWidth="xl" sx={{ background: '#263238'
+   }} >
         <Toolbar disableGutters className="appbar">
           <Typography
             variant="h6"
@@ -59,14 +61,11 @@ const Navbar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            <img
-              id="logo"
-              src="https://cdn1.vectorstock.com/i/1000x1000/74/60/delicious-bakery-cakes-and-cookies-vector-26557460.jpg"
-              alt=""
-            />
+          <Link to="/"> <p className='logo'>Sweetie</p></Link>
+           
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, ms: 2, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -82,7 +81,7 @@ const Navbar = () => {
               anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
-                color: 'black',
+                color: '#efebe9',
               }}
               keepMounted
               transformOrigin={{
@@ -103,7 +102,7 @@ const Navbar = () => {
                         sx={{
                           ml: '0',
                           my: 1,
-                          color: 'black',
+                          color: '#efebe9',
                           display: 'block',
                         }}
                       >
@@ -118,7 +117,7 @@ const Navbar = () => {
           </Box>
           <Box
             sx={{
-              justifyContent: 'center',
+              justifyContent: 'left',
               flexGrow: 1,
               display: { xs: 'none', md: 'flex' },
             }}
@@ -130,7 +129,7 @@ const Navbar = () => {
                   sx={{
                     ml: 'auto',
                     my: 2,
-                    color: 'black',
+                    color: '#efebe9',
                     display: 'block',
                     fontWeight: 'bold',
                   }}
@@ -138,11 +137,13 @@ const Navbar = () => {
                   {page.name}
                 </Button>
               </Link>
-            ))}
+            ))} 
+
+              {/* <Product /> */}
 
             {email == ADMIN ? (
               <Link to="/admin">
-                <Button sx={{ my: 2, color: 'black' }}>ADMIN PAGE</Button>
+                <Button sx={{ my: 2, color: '#efebe9' }}>ADMIN PAGE</Button>
               </Link>
             ) : (
               <Link to="/cart">
@@ -160,14 +161,14 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 0 }}>
             {email ? (
               <Button
-                sx={{ color: 'black', fontWeight: 'bold' }}
+                sx={{ color: '#efebe9', fontWeight: 'bold' }}
                 onClick={handleLogout}
               >
                 LOGOUT
               </Button>
             ) : (
               <Link to="/auth">
-                <Button sx={{ color: 'black', fontWeight: 'bold' }}>
+                <Button sx={{ color: '#efebe9', fontWeight: 'bold' }}>
                   LOGIN
                 </Button>
               </Link>

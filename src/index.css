@@ -6,9 +6,9 @@
 a{
     text-decoration: none;
 }
-#logo{
-    width: 60px;
-    height: 60px;
+.logo{
+    font-size: 20px;
+    color: pink;
 }
 .back{
     position: absolute;

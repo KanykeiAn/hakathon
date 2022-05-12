@@ -30,7 +30,7 @@ const ProductDetails = () => {
             {productDetails.description}
           </Typography>
           <Typography variant='h6' sx={{marginBottom: '1rem', color: '#83B73B'}}>
-            ${productDetails.price}
+            c{productDetails.price}
           </Typography>
           <Button variant='contained' sx={{fontSize: '0.7rem', padding: '14px 44px', width: '12vw'}}>Add to cart</Button>
         </Grid>

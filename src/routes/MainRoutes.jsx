@@ -10,6 +10,7 @@ import { useAuth } from '../contexts/AuthContextProvider';
 import { ADMIN } from '../helpers/consts';
 import AboutUsPage from '../pages/AboutUsPage';
 import ProductsPage from '../pages/ProductsPage';
+import PayCard from '../Components/PayCard/PayCard';
 
 
 const MainRoutes = () => {
@@ -49,6 +50,11 @@ const MainRoutes = () => {
             link: '/products/:id',
             element: <ProductDetailsPage />,
             id: 7,
+          },
+          {
+            link: '/paycard',
+            element: <PayCard />,
+            id: 8,
           },
     ]
 

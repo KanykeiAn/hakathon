@@ -1,3 +1,4 @@
+import Footer from './Components/footer/Footer';
 import Navbar from './Components/Header/Navbar';
 import AuthContextProvider from './contexts/AuthContextProvider';
 import CartContextProvider from './contexts/CartContextProvider';
@@ -13,6 +14,7 @@ function App() {
           <CartContextProvider>
             <Navbar />
             <MainRoutes />
+          <Footer/>
           </CartContextProvider>
         </ProductContexProvider>
       </AuthContextProvider>

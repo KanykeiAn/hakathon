@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from '../Components/home/Home';
-// import Footer from '../Components/footer/Footer';
+import Footer from '../Components/footer/Footer';
 
 
 
@@ -9,7 +9,7 @@ const HomePage = () => {
     return (
      <>
      <Home/>
-     {/* <Footer/> */}
+     <Footer/>
      </>
     );
 };

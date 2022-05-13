@@ -1,7 +1,5 @@
-import { Grid, InputAdornment, Paper, TextField } from '@mui/material';
-import React, { useEffect, useState } from 'react';
-import SearchIcon from '@mui/icons-material/Search';
-import { useSearchParams } from 'react-router-dom';
+import { Grid, Paper } from '@mui/material';
+import React from 'react';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -14,7 +12,7 @@ const SideBar = () => {
 
 
   return (
-    <Grid item md={3}>
+    <Grid item md={2} my={2.5} sx={{ position: 'relative' }}>
       <Paper elevation={5} sx={{ p: 2 }}>
         <Grid>
           <FormControl>

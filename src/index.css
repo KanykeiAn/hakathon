@@ -24,7 +24,17 @@ a{
 .search{
     margin-right: 10vw;
 }
-/* .appbar{
-    display: flex;
-    justify-content: space-between;
-} */
+.margin{
+    margin: 20px;
+}
+.hhh{
+    min-height: 1180px;
+    width: 100%;
+    position: absolute;
+}
+.pagi{
+    color: aliceblue;
+    background-color: white;
+    /* border-radius: 5%; */
+    position: relative;
+}

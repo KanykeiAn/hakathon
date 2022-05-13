@@ -3,6 +3,7 @@ video {
 justify-content: center; */
 
   width: 100%;
+  max-width: 60%;
   max-height: 80%;
   
 }
@@ -56,10 +57,10 @@ justify-content: center; */
 
 
 .advertising {
-  /* display: flex; */
+  display: flex;
 
-  margin-top: 8%;
-  width: 90%;
+  margin-top: 3%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -71,8 +72,8 @@ justify-content: center; */
 
 .home_advertising_rigth p {
   font-size: 1.1em;
-  /* width: 50%; */
-  color: #f7f7f7;
+  width: 50%;
+  color: black;
 }
 
 

@@ -26,10 +26,10 @@ export default function ProductCard({ item }) {
   console.log(email);
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 330 }} className="margin">
       <CardMedia
         component="img"
-        height="140"
+        height="270"
         image={item.picture}
         alt={item.name}
       />
@@ -44,7 +44,7 @@ export default function ProductCard({ item }) {
           component="div"
           sx={{ color: 'green', fontWeight: '700' }}
         >
-          {item.price}$
+          {item.price}c
         </Typography>
 
         <Typography

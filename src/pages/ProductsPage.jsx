@@ -5,11 +5,11 @@ import SideBar from '../Components/product/SideBar';
 
 const ProductsPage = () => {
   return (
-    <Box p={5}>
-      ProductsPage
-      <Grid container spacing={3}>
-        <ProductList />
+    <Box p={2}>
+      <Grid container spacing={2}>
+      <img className='hhh' src="https://images.pexels.com/photos/7233716/pexels-photo-7233716.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
         <SideBar />
+        <ProductList />
       </Grid>
     </Box>
   );

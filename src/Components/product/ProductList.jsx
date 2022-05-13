@@ -19,7 +19,7 @@ const ProductList = () => {
   }, [searchParams]);
 
   const [page, setPage] = useState(1);
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
   const count = Math.ceil(products.length / itemsPerPage);
 
   const handleChange = (e, p) => {
@@ -59,6 +59,7 @@ const ProductList = () => {
         </Box>
 
         <Pagination
+          className='pagi'
           count={count}
           variant="outlined"
           shape="rounded"

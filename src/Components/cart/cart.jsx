@@ -46,7 +46,7 @@ export default function Cart() {
   };
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className="jkl">
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
@@ -98,7 +98,7 @@ export default function Cart() {
       </Table>
       
       <Link to="/paycard">
-        <Button onClick={cartCleaner}>BUY NOW FOR {cart.totalPrice}$</Button>
+        <Button className='ddd' onClick={cartCleaner}>BUY NOW FOR {cart.totalPrice}c</Button>
       </Link>
     </TableContainer>
   );

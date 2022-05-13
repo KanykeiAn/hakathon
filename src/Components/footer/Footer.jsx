@@ -8,10 +8,6 @@ import Telegram from '../assets/footerimage/Telegram.png';
 import WhatsApp from '../assets/footerimage/WhatsApp.png';
 import YouTube from '../assets/footerimage/YouTube.png';
 
-
-
-
-
 const Footer = () => {
   return (
     <div className="main-footer">
@@ -20,7 +16,7 @@ const Footer = () => {
           {/* column1 */}
           <div className="col">
             <ul className="lis_unstyled">
-              <h4>Book_Stores</h4>
+              <h4>Dessert stores</h4>
               <li>Home</li>
               <li>Products</li>
               <li>About Us</li>
@@ -30,27 +26,27 @@ const Footer = () => {
           <div className="col2">
             <ul className="lis_unstyled">
               <h4>Partners</h4>
-              <li>Books Land </li>
-              <li>Raritet</li>
-              <li>Robin Sharma</li>
+              <li>Арман </li>
+              <li>Магнолия</li>
+              <li>Береке</li>
             </ul>
           </div>
           {/* column3 */}
           <div className="col3">
             <ul className="lis_unstyled">
-              <h4>Booksellers</h4>
-              <li>Bookseller Account Home</li>
-              <li>Bookseller FAQ</li>
-              <li>Bookseller information</li>
+              <h4>Sweetsellers</h4>
+              <li>Sweetseller Account Home</li>
+              <li>Sweetsellers FAQ</li>
+              <li>Sweetseller information</li>
             </ul>
           </div>
           {/* column4 */}
           <div className="col4">
             <ul className="lis_unstyled">
               <h4>Contact</h4>
-              <li>+99670854637</li>
-              <li>Email: book_stores@gmail.com </li>
-              <li>Address: г.Бишкек ул.Масалиева 46 </li>
+              <li>+996704880115</li>
+              <li>Email: sweetie_stores@gmail.com </li>
+              <li>Address: г.Бишкек ул.Табышалиева 29 </li>
             </ul>
           </div>
         </div>
@@ -86,6 +82,7 @@ const Footer = () => {
           <img src={YouTube} alt="" />
         </a>
       </div>
+      
     </div>
   );
 };

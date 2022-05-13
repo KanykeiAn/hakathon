@@ -59,11 +59,12 @@ export default function Auth() {
 
   return (
     <ThemeProvider theme={theme}>
+      <img className='bebeb' src="https://images.pexels.com/photos/3734026/pexels-photo-3734026.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            paddingTop: 8,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -118,6 +119,7 @@ export default function Auth() {
 
             {hasAccount ? (
               <Button
+              className='mj'
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
@@ -127,6 +129,7 @@ export default function Auth() {
               </Button>
             ) : (
               <Button
+              className='mj'
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}

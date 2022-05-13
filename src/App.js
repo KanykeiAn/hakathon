@@ -1,4 +1,4 @@
-
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Header/Navbar';
 import AuthContextProvider from './contexts/AuthContextProvider';
 import CartContextProvider from './contexts/CartContextProvider';
@@ -14,7 +14,6 @@ function App() {
           <CartContextProvider>
             <Navbar />
             <MainRoutes />
-          
           </CartContextProvider>
         </ProductContexProvider>
       </AuthContextProvider>

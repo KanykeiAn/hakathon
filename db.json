@@ -121,17 +121,17 @@
       "id": 15
     },
     {
-      "name": "Медовик",
-      "description": "Класический медовик с традиционным вкусом.",
-      "price": 1000,
-      "picture": "https://images.pexels.com/photos/2684556/pexels-photo-2684556.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "name": "Свадебный медовик",
+      "description": "Класический медовик со сливочным кремом и ягодами украсят важное торжество.",
+      "price": 25000,
+      "picture": "https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "type": "Торты",
       "id": 16
     },
     {
       "name": "Шоколадный",
       "description": "Нежный бисквит с шоколадной начинкой. Сверху покрыт толстым слоем шоколада.",
-      "price": 1100,
+      "price": 2500,
       "picture": "https://images.pexels.com/photos/11076351/pexels-photo-11076351.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       "type": "Торты",
       "id": 17
@@ -139,16 +139,16 @@
     {
       "name": "Красный бархат",
       "description": "Трехслойный торт с шоколадными прослойками и нежнейшим сливочным кремом с белым шоколадом.",
-      "price": 1200,
+      "price": 2500,
       "picture": "https://cheese-cake.ru/DesertImg/tort-red-velvet-3-2-1.jpg",
       "type": "Торты",
       "id": 18
     },
     {
-      "name": "Ягодный мусс",
-      "description": "Двухслойный торт на основе ягодного мусса с фисташковой крошкой и белым шоколадом.",
-      "price": 2100,
-      "picture": "https://images.pexels.com/photos/1998632/pexels-photo-1998632.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "name": "Праздничный",
+      "description": "Трехслойный торт на основе ягодного мусса с белым шоколадом и оригинальным дизайном.",
+      "price": 3000,
+      "picture": "https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2FrZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       "type": "Торты",
       "id": 19
     },
@@ -275,7 +275,7 @@
     {
       "name": "Сок вишня",
       "description": "Сок вишня",
-      "price": 120,
+      "price": 200,
       "picture": "https://dodopizza-a.akamaihd.net/static/Img/Products/a11797d070a144c6b3a507b7654abcf5_1875x1875.jpeg",
       "type": "Напитки",
       "id": 35
@@ -283,7 +283,7 @@
     {
       "name": "Сок яблоко",
       "description": "Сок яблоко",
-      "price": 120,
+      "price": 200,
       "picture": "https://dodopizza-a.akamaihd.net/static/Img/Products/c6ebd51a6b66439aba4782c958c84a44_1875x1875.jpeg",
       "type": "Напитки",
       "id": 36

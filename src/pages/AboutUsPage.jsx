@@ -1,10 +1,12 @@
 import React from 'react';
-// import Footer from '../Components/footer/Footer';
+import AboutUs from '../Components/aboutUs/AboutUs';
+import Footer from '../Components/footer/Footer';
 
 const AboutUsPage = () => {
     return (
         <div>
-            {/* <Footer/> */}
+            <AboutUs/>
+            <Footer/>
         </div>
     );
 };

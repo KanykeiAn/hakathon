@@ -1,28 +1,25 @@
-import { Container } from '@mui/material';
-import React from 'react';
-import Video from '../assets/homeimage/vid2.mp4';
-import './Home.css';
 
 
+import React from "react";
+// import "./SectionFirs.module.css";
+import "./SectionFirst.css";
+// import icons1 from "../assets/";
+// import icons2 from "../assets/imghome/icons2.png";
+// import icons3 from "../assets/imghome/icons3.png";
 
-  const Home = () => {
+const Home = () => {
   return (
-    
-    
- 
-
-
-<>
- 
-
+    <>
+      <div className="qqq">
       <div className="container">
         <div className="parallax">
           <div className="parallax_body">
             <div className="parallax_header">
-              <h1 className="text">Будем знакомы!</h1>
+              <h1 className="text">Добро пожаловать на наш сайт!</h1>
               <p className="text_p">
-                Кни́га — один из видов печатной продукции: непериодическое
-                издание, состоящее из сброшюрованных или отдельных бумажных
+              Друзья, если так случилось, что обычные пирожные и тортики из гастронома уже не будоражат Ваш вкус и хочется чего-то оригинального, то Вы попали на правильный сайт. 
+//               Мы исследовали кухни разных стран в поисках оригинальных сладостей для Вашего стола. вы когда-нибудь слышали про такую сладость как макаруны ? 
+//               Невероятно вкусно, и никаких проблем с фигурой.
               </p>
             </div>
           </div>
@@ -31,9 +28,10 @@ import './Home.css';
 
       <div className="advertising">
         <div className="advertising_left">
-         <Container>
-          <video autoPlay loop muted ><source src={Video} type='video/mp4' /></video> 
-        </Container>
+          <img
+            src="https://images.pexels.com/photos/691152/pexels-photo-691152.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
         </div>
         <div className="home_advertising_rigth">
           <p>
@@ -53,10 +51,12 @@ import './Home.css';
           </p>
         </div>
         </div>
+      </div>
     </>
   );
 };
 
+export default Home;
 
 
 
@@ -64,14 +64,13 @@ import './Home.css';
 
 
 
-  export default Home;
 
 
 
 
 
 
-  
+
 
 
 

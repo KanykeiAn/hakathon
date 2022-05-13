@@ -11,13 +11,13 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContextProvider';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
 import { Badge } from '@mui/material';
 import { getCountProductsInCart } from '../../helpers/functions';
 import { useCart } from '../../contexts/CartContextProvider';
 import { ADMIN } from '../../helpers/consts';
 import Search from './Search';
-import Product from './Product';
+
 
 const pages = [
   { name: 'О нас', link: '/about', id: 1 },
@@ -67,6 +67,7 @@ const Navbar = () => {
 
           <Box sx={{ flexGrow: 1, ms: 2, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
+
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -149,7 +150,7 @@ const Navbar = () => {
               <Link to="/cart">
                 <Button sx={{ my: 2, color: 'black' }}>
                   <Badge badgeContent={count} color="error">
-                    <ShoppingCartIcon />
+                    <img className='lll' src="https://cdn-icons-png.flaticon.com/512/4290/4290854.png" alt="" />
                   </Badge>
                 </Button>
               </Link>

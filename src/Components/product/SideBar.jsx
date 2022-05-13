@@ -14,7 +14,7 @@ const SideBar = () => {
 
 
   return (
-    <Grid item md={3}>
+    <Grid item md={2} className="side">
       <Paper elevation={5} sx={{ p: 2 }}>
         <Grid>
           <FormControl>

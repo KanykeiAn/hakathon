@@ -139,7 +139,7 @@ export default function Auth() {
               </Button>
             )}
 
-            <Grid container>
+            <Grid container className='nh'>
               <Grid item xs>
                 <Link href="#" variant="body2">
                   Forgot password?

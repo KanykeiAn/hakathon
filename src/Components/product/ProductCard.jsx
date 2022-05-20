@@ -9,15 +9,20 @@ import { useNavigate } from 'react-router-dom';
 import { useProducts } from '../../contexts/ProductContextProvider';
 import { IconButton } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { useCart } from '../../contexts/CartContextProvider';
+import { useCart} from '../../contexts/CartContextProvider';
 import { useAuth } from '../../contexts/AuthContextProvider';
 import { ADMIN } from '../../helpers/consts';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+// import { useFavorite } from '../../contexts/FavoriteContextProvider';
+
 
 export default function ProductCard({ item }) {
   const navigate = useNavigate();
 
   const { deleteProduct } = useProducts();
   const { addProductToCart, checkProductInCart } = useCart();
+  // const { addProductToFavorite, checkProductInFavorite } = useFavorite();
+
 
   const {
     handleLogout,
@@ -31,23 +36,33 @@ export default function ProductCard({ item }) {
         component="img"
         height="250"
         image={item.picture}
-        alt={item.name}
+        alt={item.title}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {item.name}
+        <Typography
+          gutterBottom variant="h5"
+          component="div"
+          onClick={() => navigate(`/products/${item.id}`)}
+          sx={{
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            display: '-webkit-box',
+            WebkitLineClamp: '3',
+            WebkitBoxOrient: 'vertical',
+          }}>
+          {item.title}
         </Typography>
 
-        <Typography
+        {/* <Typography
           gutterBottom
           variant="h5"
           component="div"
           sx={{ color: 'green', fontWeight: '700' }}
         >
           {item.price}c
-        </Typography>
+        </Typography> */}
 
-        <Typography
+        {/* <Typography
           variant="body2"
           color="text.secondary"
           onClick={() => navigate(`/products/${item.id}`)}
@@ -60,7 +75,7 @@ export default function ProductCard({ item }) {
           }}
         >
           {item.description}
-        </Typography>
+        </Typography> */}
       </CardContent>
       <CardActions>
         {email == ADMIN ? (
@@ -74,11 +89,21 @@ export default function ProductCard({ item }) {
             </Button>
           </>
         ) : (
-          <IconButton onClick={() => addProductToCart(item)}>
-            <ShoppingCartIcon
-              color={checkProductInCart(item.id) ? 'primary' : ''}
-            />
-          </IconButton>
+          <>
+             <IconButton onClick={() => addProductToCart(item)}>
+                    <ShoppingCartIcon
+                      color={checkProductInCart(item.id) ? 'primary' : ''}
+                    />
+             </IconButton>
+
+              
+                {/* <IconButton onClick={() => addProductToFavorite(item)}>
+                  <FavoriteBorderIcon 
+                      color={checkProductInFavorite(item.id) ? 'primary' : ''} 
+                  />
+                </IconButton>  */}
+          </>
+         
         )}
       </CardActions>
     </Card>

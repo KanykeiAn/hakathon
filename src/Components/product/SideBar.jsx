@@ -1,7 +1,7 @@
 import { Grid, InputAdornment, Paper, TextField } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import SearchIcon from '@mui/icons-material/Search';
-import { useSearchParams } from 'react-router-dom';
+// import SearchIcon from '@mui/icons-material/Search';
+// import { useSearchParams } from 'react-router-dom';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -18,7 +18,7 @@ const SideBar = () => {
       <Paper elevation={5} sx={{ p: 2 }}>
         <Grid>
           <FormControl>
-            <FormLabel id="demo-radio-buttons-group-label">Продукт</FormLabel>
+            <FormLabel id="demo-radio-buttons-group-label">Жанры</FormLabel>
             <RadioGroup
               aria-labelledby="demo-radio-buttons-group-label"
               defaultValue="all"
@@ -28,33 +28,27 @@ const SideBar = () => {
               <FormControlLabel value="all" control={<Radio />} label="все" />
 
               <FormControlLabel
-                value="Макарон"
+                value="Юри"
                 control={<Radio />}
-                label="Макарон"
+                label="Юри"
               />
 
               <FormControlLabel
-                value="Торты"
+                value="Яой"
                 control={<Radio />}
-                label="Торты"
+                label="Яой"
               />
 
               <FormControlLabel
-                value="Мороженое"
+                value="18+"
                 control={<Radio />}
-                label="Мороженое"
-              />
-
-              <FormControlLabel
-                value="Напитки"
-                control={<Radio />}
-                label="Напитки"
+                label="18+"
               />
             </RadioGroup>
           </FormControl>
         </Grid>
 
-        <FormControl>
+        {/* <FormControl>
           <FormLabel id="demo-radio-buttons-group-label">Цена</FormLabel>
           <RadioGroup
             aria-labelledby="demo-radio-buttons-group-label"
@@ -81,7 +75,7 @@ const SideBar = () => {
               label="меньше 1300с"
             />
           </RadioGroup>
-        </FormControl>
+        </FormControl> */}
       </Paper>
     </Grid>
   );

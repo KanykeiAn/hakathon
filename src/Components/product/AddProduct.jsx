@@ -1,31 +1,36 @@
 import { Box, Button, TextField } from '@mui/material';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useProducts } from '../../contexts/ProductContextProvider';
 
 const AddProduct = () => {
-  const { addProduct } = useProducts();
+  const { addProduct, getProducts } = useProducts();
   const navigate = useNavigate();
 
   const [product, setProduct] = useState({
-    name: '',
+    title: '',
     description: '',
     price: 0,
-    picture: '',
+    images: '',
     type: '',
   });
+  useEffect(() => {
+    getProducts()
+  
+  }, [])
+  
 
   const handleInp = (e) => {
-    if (e.target.name === 'price') {
+    if (e.target.title === 'price') {
       let obj = {
         ...product,
-        [e.target.name]: Number(e.target.value),
+        [e.target.title]: Number(e.target.value),
       };
       setProduct(obj);
     } else {
       let obj = {
         ...product,
-        [e.target.name]: e.target.value,
+        [e.target.title]: e.target.value,
       };
       setProduct(obj);
     }
@@ -37,12 +42,12 @@ const AddProduct = () => {
       className='ju'
         fullWidth
         id="outlined-basic"
-        label="Name"
+        label="Title"
         variant="outlined"
-        name="name"
+        name="title"
         onChange={handleInp}
       />
-      <TextField
+      {/* <TextField
         fullWidth
         id="outlined-basic"
         label="Description"
@@ -57,13 +62,13 @@ const AddProduct = () => {
         variant="outlined"
         name="price"
         onChange={handleInp}
-      />
+      /> */}
       <TextField
         fullWidth
         id="outlined-basic"
-        label="Picture"
+        label="Images"
         variant="outlined"
-        name="picture"
+        name="imsges"
         onChange={handleInp}
       />
       <TextField

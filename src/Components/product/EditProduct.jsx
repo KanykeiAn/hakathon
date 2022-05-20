@@ -24,7 +24,7 @@ const EditProduct = () => {
   const handleInp = (e) => {
     let obj = {
       ...product,
-      [e.target.name]: e.target.value,
+      [e.target.title]: e.target.value,
     };
     setProduct(obj);
   };
@@ -34,9 +34,9 @@ const EditProduct = () => {
       <TextField
         fullWidth
         id="outlined-basic"
-        label="Name"
+        label="Title"
         variant="outlined"
-        name="name"
+        title="title"
         value={product.name || ''}
         onChange={handleInp}
       />

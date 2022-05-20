@@ -11,6 +11,9 @@ import { ADMIN } from '../helpers/consts';
 import AboutUsPage from '../pages/AboutUsPage';
 import ProductsPage from '../pages/ProductsPage';
 import PayCard from '../Components/PayCard/PayCard';
+import FavoritePage from '../pages/FavoritePage';
+import Login from '../Components/auth/Login';
+import Registration from '../Components/auth/Registration';
 
 
 const MainRoutes = () => {
@@ -55,6 +58,21 @@ const MainRoutes = () => {
             link: '/paycard',
             element: <PayCard />,
             id: 8,
+          },
+          {
+            link: '/favor',
+            element: <FavoritePage />,
+            id: 9,
+          },
+          {
+            link: '/login',
+            element: <Login />,
+            id: 10,
+          },
+          {
+            link: '/register',
+            element: <Registration />,
+            id: 11,
           },
     ]
 

@@ -6,6 +6,9 @@ import { ACTIONS, JSON_API_PRODUCTS } from '../helpers/consts';
 
 export const productContext = createContext();
 
+// const API = '';
+
+
 export const useProducts = () => {
   return useContext(productContext);
 };
@@ -34,13 +37,15 @@ const ProductContexProvider = ({children}) => {
 
   const getProducts = async () => {
     const { data } = await axios(
-      `${JSON_API_PRODUCTS}${window.location.search}`
+      `${JSON_API_PRODUCTS}`
     );
     dispatch({
       type: ACTIONS.GET_PRODUCTS,
       payload: data,
     });
+    console.log(data);
   };
+  console.log(1)
 
   const addProduct = async (newProduct) => {
     await axios.post(JSON_API_PRODUCTS, newProduct);
